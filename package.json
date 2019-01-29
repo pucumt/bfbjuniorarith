@@ -3,13 +3,25 @@
   "version": "1.0.0",
   "description": "bfbjuniorarith application",
   "main": "main.js",
+  "build": {
+    "appId": "bfbschool.app",
+    "mac": {
+      "target": ["dmg", "zip"]
+    },
+    "win": {
+      "target": ["nsis", "zip"]
+    }
+  },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-packager . bfbjuniorarith --win --out ../bfbjuniorarith2 --arch=x64 --app--version=0.0.1",
+    "dist": "electron-builder --win --x64"
   },
   "repository": "https://github.com/pucumt/bfbjuniorarith",
   "author": "weple",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^4.0.2"
+    "electron": "^4.0.2",
+    "electron-builder": "^20.38.5"
   }
 }
