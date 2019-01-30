@@ -15,7 +15,8 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-packager . bfbjuniorarith --win --out ../bfbjuniorarith2 --arch=x64 --app--version=0.0.1",
-    "dist": "electron-builder --win --x64"
+    "dist": "electron-builder --win --x64",
+    "dist2": "electron-builder --mac"
   },
   "repository": "https://github.com/pucumt/bfbjuniorarith",
   "author": "weple",
